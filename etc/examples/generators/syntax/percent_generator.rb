@@ -174,7 +174,6 @@ end
 
 
 # regex (Normal Regular Expression) {{{
-
 if arg == 'regexp'
   'iomxneus'.split('').unshift('').each do |option|
     puts "\n# Begin test for option '#{option}' {{{\n\n"
