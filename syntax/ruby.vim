@@ -341,7 +341,7 @@ if !exists("b:ruby_no_expensive") && !exists("ruby_no_expensive")
     syn region rubyBlock start="\<class\>"	matchgroup=rubyClass end="\<end\>" contains=ALLBUT,@rubyNotTop
   endif
 
-  if s:foldable('class')
+  if s:foldable('module')
     syn region rubyBlock start="\<module\>" matchgroup=rubyModule end="\<end\>" contains=ALLBUT,@rubyNotTop fold
   else
     syn region rubyBlock start="\<module\>" matchgroup=rubyModule end="\<end\>" contains=ALLBUT,@rubyNotTop
